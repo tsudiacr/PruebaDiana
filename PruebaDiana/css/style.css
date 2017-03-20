@@ -1,0 +1,27 @@
+header {
+    background-color: #2E9AFE;
+    color: white;
+    height: 5em;
+    padding-top: 1%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.btn-group-right{
+	    float: right;
+	    padding-bottom: 1em;
+}
+
+.modal-header{
+	    background-color: #2E9AFE;
+    color: white;
+}

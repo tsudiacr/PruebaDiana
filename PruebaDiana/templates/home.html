@@ -1,0 +1,57 @@
+ <div class=" btn-group-right">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#InferenciadorModal" >Inferenciador</button>
+                <a class="btn btn-success" href="#!/inferenciador" >Crear Regla</a>
+            </div>
+
+            <center>
+                <table id="table" class="display table  table-bordered "   data-id-field="id"
+                data-toolbar="#toolbar" data-search="true"
+                data-click-to-select="true"
+                data-page-size="10"
+                data-response-handler="responseHandler"
+                data-height="400"
+                data-mobile-responsive="true"
+                data-maintain-selected = "true"
+                >
+                <thead>
+                    <tr id="th_tr">
+                        <th data-field="Identificador"> Identificador</th>
+                        <th data-field="Nombre"> Nombre </th>
+                        <th data-field="Condicion"> Condición </th>
+                        <th data-field="Operaciones"> Operaciones </th>
+                    </tr>
+                </thead>
+            </table>
+        </center>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="InferenciadorModal" class="modal fade" role="dialog" >
+        <div class="modal-dialog" style="margin-left: 20em;">
+
+            <!-- Modal content-->
+            <div class="modal-content"  style=" width: 60em;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Probar Hecho</h4>
+                </div>
+                <div class="modal-body" style="height: 30em;">
+
+                <div class="row" style="height: 100%;">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="height: 400px;" >
+                        <angular-jsoneditor ng-model="obj.data" options="obj.options" ></angular-jsoneditor>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="height: 400px;" >
+                            <angular-jsoneditor ng-model="obj.data" options="obj.options" ></angular-jsoneditor>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-info">Enviar</button>
+                </div>
+            </div>
+
+        </div>
